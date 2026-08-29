@@ -336,7 +336,7 @@ inQueueX.FreeTensor(x);
 | v9 Reciprocal+Mul | `Reciprocal<float>` 精度不足 1e-4 | 32% 错（回退） |
 | **v10 动态 TILE_NUM** | fp32 大数据 4096 / 小数据 2048 | **84.68 分 / 第 1** |
 
-### 关键踩坑（已沉淀为经验）
+### 调优过程
 
 1. **dtype 分发**：评测约定 `0=fp32, 1=fp16, 2=bf16`，只实现一种会全错。
 2. **`AscendC::Erf` 高级 API 不可用**：direct invocation + 2201 真机全量输出错误（疑 mask/workspace 交互），必须 basic API 手写。
@@ -364,7 +364,9 @@ inQueueX.FreeTensor(x);
 - CANN Toolkit（9.2.0-beta.1），昇腾 910B（dav-2201）。
 - `export ASCEND_HOME_PATH=... && source ${ASCEND_HOME_PATH}/set_env.sh`
 - 本机若无 NPU 硬件，编译可过但运行 `aclInit` 失败（`ACL_ERROR_INTERNAL_ERROR`），需真机/评测环境。
+- 可直接在cannjudge找到题目，提交文件，得到结果
 
+  
 ### 6.2 全流程
 
 ```bash
