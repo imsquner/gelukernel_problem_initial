@@ -1,1 +1,0 @@
- /usr/local/Ascend/cann-9.2.0-beta.1/bin/bisheng CMakeFiles/gelu_custom.dir/main.asc.o -o gelu_custom  -ltiling_api -lregister -lplatform -lunified_dlog -ldl -lm -lgraph_base

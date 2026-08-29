@@ -1,3 +1,0 @@
-/home/ziming/Downloads/gelukernel_problem_348_template/build/CMakeFiles/gelu_custom.dir
-/home/ziming/Downloads/gelukernel_problem_348_template/build/CMakeFiles/edit_cache.dir
-/home/ziming/Downloads/gelukernel_problem_348_template/build/CMakeFiles/rebuild_cache.dir
