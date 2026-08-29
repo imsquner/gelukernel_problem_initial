@@ -11,7 +11,8 @@
 
 对输入张量每个元素应用 GELU 激活：
 
-$$\text{GELU}(x) = 0.5 \cdot x \cdot (1 + \text{erf}(x / \sqrt{2}))$$
+
+<img src="gelu.png" alt="Gelu" width="100%" />
 
 ### 1.2 精度要求（赛题规定）
 
